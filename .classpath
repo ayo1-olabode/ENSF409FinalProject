@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="lib/src/build/java"/>
+	<classpathentry kind="src" path="lib/src/demo/java"/>
+	<classpathentry kind="src" path="lib/src/generated/java"/>
+	<classpathentry kind="src" path="lib/src/legacy/java"/>
+	<classpathentry kind="src" path="lib/src/main/core-api/java"/>
+	<classpathentry kind="src" path="lib/src/main/core-impl/java"/>
+	<classpathentry kind="src" path="lib/src/main/protocol-impl/java"/>
+	<classpathentry kind="src" path="lib/src/main/user-api/java"/>
+	<classpathentry kind="src" path="lib/src/main/user-impl/java"/>
+	<classpathentry kind="src" path="lib/src/test/java"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-8.0.23.jar"/>
+	<classpathentry kind="lib" path="jgoodies-forms-1.8.0.jar" sourcepath="jgoodies-forms-1.8.0-sources.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="out/production/ENSFProject"/>
+</classpath>
