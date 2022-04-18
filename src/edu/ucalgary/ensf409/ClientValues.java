@@ -7,11 +7,11 @@
 package edu.ucalgary.ensf409;
 
 public class ClientValues {
-    private int adultMaleWG = 1;
-    private int adultMaleFV= 1;
-    private int adultMaleP= 1;
-    private int adultMaleO= 1;
-    private int adultMaleC= 1;
+    private int adultMaleWG;
+    private int adultMaleFV;
+    private int adultMaleP;
+    private int adultMaleO;
+    private int adultMaleC;
     
     private int adultFemaleWG;
     private int adultFemaleFV;
