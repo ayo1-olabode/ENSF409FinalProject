@@ -21,7 +21,7 @@ public class Client {
 	//gets the required amount of macros for the specified type of person in the hamper
     private ClientValues constants;
     
-    Client(int maleAdults, int femaleAdults, int ChildUnder8, int ChildOver8, ClientValues constants) throws HamperCreationException {
+    public Client(int maleAdults, int femaleAdults, int ChildUnder8, int ChildOver8, ClientValues constants) throws HamperCreationException {
         this.maleAdults = maleAdults;
       
         this.femaleAdults = femaleAdults;

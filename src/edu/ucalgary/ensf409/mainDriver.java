@@ -78,12 +78,12 @@ public class mainDriver {
 		 calculating the food required per the amount of male adults, female adults
 		 children under 8, and children over 8, for the hampers
 		 */
-		for (Client client  : clientlist) {
+		for (Client client : clientlist) {
 			calculateFood calcFood = new calculateFood(client);
 			String report = calcFood.getFoodString();
 
 			//console print out of hampers for debugging
-			System.out.println(report);
+			//System.out.println(report);
 
 			//displays the hamper with the food items in said hamper
 			clientPrintReport.buildReport("Hamper " + hamper + " Items:" + "\n");

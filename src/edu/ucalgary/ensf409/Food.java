@@ -17,14 +17,14 @@ public class Food {
     private int other;
     private int calories;
 
-    public void createConnection() throws SQLException {
-        try {
-            dbConnect = DriverManager.getConnection("jdbc:mysql://localhost/FOOD_INVENTORY", "user1", "ensf");
-        }
-        catch(SQLException e) {
-            e.printStackTrace();
-        }
-    }
+//    public void createConnection() throws SQLException {
+//        try {
+//            dbConnect = DriverManager.getConnection("jdbc:mysql://localhost/FOOD_INVENTORY", "user1", "ensf");
+//        }
+//        catch(SQLException e) {
+//            e.printStackTrace();
+//        }
+//    }
     /**
      * constructor for our food items
 	 * @param foodid is the ID number
@@ -48,23 +48,7 @@ public class Food {
 		this.foodStock = foodStock;
 	}
 	
-	    //updates the database, removes items that are put into hamper
 
-
-	public void updateStock(int ID) throws SQLException {
-        try {
-            String query = "DELETE FROM AVAILABLE_FOOD WHERE ItemID = ?";
-            PreparedStatement statement = dbConnect.prepareStatement(query);
-            statement.setInt(1, ID);
-
-            int rowCount = statement.executeUpdate();
-            System.out.println("Rows affected: " + rowCount);
-            statement.close();
-        }
-        catch(SQLException e) {
-            e.printStackTrace();
-        }
-    }
 	
     //getter and setters
     public int getFoodID() { return this.foodID; }

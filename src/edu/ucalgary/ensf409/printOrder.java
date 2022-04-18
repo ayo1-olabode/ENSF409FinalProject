@@ -38,7 +38,7 @@ public class printOrder implements FormattedOutputs {
      then prints the items in the hampers; sets output stream to a file and prints hamper
      */
     public void printReport(String report) throws FileNotFoundException {
-        System.out.println("Order Report");
+        //System.out.println("Order Report");
         File saveFile = new File("OrderReports/OrderForm.txt");
 
         PrintStream outputFile = new PrintStream(saveFile);
