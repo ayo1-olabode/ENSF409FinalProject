@@ -11,9 +11,11 @@ children over 8, and the number of children under 8, and calculate the food requ
 Clone repo into the desired folder (Preferably in an IDE and run Controller.java as an entry point)
 
 If running in a terminal, cd into the src folder and compile package
--- > edu.ucalgary.ensf409 and use the command ```Javac``` on all java files.
+-- > src/edu.ucalgary.ensf409 and use the command ```Javac``` on all java files.
+ex.  javac src/edu/ucalgary/ensf409/*.java 
 
-After compiling, run command ```java edu.ucalgary.ensf409.Controller```
+After compiling, cd into src and
+run command ```java edu.ucalgary.ensf409.Controller```
 
 //Select libraries must be included when compiling the program.
 
