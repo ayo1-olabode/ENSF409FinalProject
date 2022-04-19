@@ -194,7 +194,7 @@ public class ProjectTestDesign {
    */
     @Test(expected = HamperCreationException.class)
     public void testMainDriver_InvalidClientException() throws HamperCreationException {
-        InventoryDB db = new InventoryDB("jdbc:mysql://localhost/food_inventory", "ensf", "student");
+        InventoryDB db = new InventoryDB("jdbc:mysql://localhost/food_inventory", "student", "ensf");
         Client client = new Client(0, 0, 0, 0, nutritionValues);
     }
 
@@ -206,7 +206,7 @@ public class ProjectTestDesign {
      they want to download our sample sql file */
     @Test(expected = HamperCreationException.class)
     public void testMainDriver_EmptyFoodItemsException() throws HamperCreationException {
-        InventoryDB db = new InventoryDB("jdbc:mysql://localhost/food_inventory", "ensf", "student");
+        InventoryDB db = new InventoryDB("jdbc:mysql://localhost/food_inventory", "student", "ensf"");
 
         Client client = new Client(1, 1, 1, 1, nutritionValues);
         Client client1 = new Client(1, 1, 1, 1, nutritionValues);
@@ -240,7 +240,7 @@ public class ProjectTestDesign {
     public void testMainDriverConstructor() throws HamperCreationException {
         Client client = new Client(1, 1, 1, 1, nutritionValues);
         Client client1 = new Client(1, 1, 0, 0, nutritionValues);
-        InventoryDB db = new InventoryDB("jdbc:mysql://localhost/food_inventory", "ensf", "student");
+        InventoryDB db = new InventoryDB("jdbc:mysql://localhost/food_inventory", "student", "ensf");
         ArrayList<Client> list = new ArrayList<Client>();
         list.add(client);
         list.add(client1);
@@ -255,7 +255,7 @@ public class ProjectTestDesign {
     public void testMainDriverGetFood() throws HamperCreationException {
         Client client = new Client(1, 1, 1, 1, nutritionValues);
         Client client1 = new Client(1, 1, 0, 0, nutritionValues);
-        InventoryDB db = new InventoryDB("jdbc:mysql://localhost/food_inventory", "ensf", "student");
+        InventoryDB db = new InventoryDB("jdbc:mysql://localhost/food_inventory", "student", "ensf");
         ArrayList<Client> list = new ArrayList<Client>();
         list.add(client);
         list.add(client1);
@@ -272,7 +272,7 @@ public class ProjectTestDesign {
     public void testMainDriverSetFood() throws HamperCreationException {
         Client client = new Client(1, 1, 1, 1, nutritionValues);
         Client client1 = new Client(1, 1, 0, 0, nutritionValues);
-        InventoryDB db = new InventoryDB("jdbc:mysql://localhost/food_inventory", "ensf", "student");
+        InventoryDB db = new InventoryDB("jdbc:mysql://localhost/food_inventory", "student", "ensf");
         ArrayList<Client> list = new ArrayList<Client>();
         list.add(client);
         list.add(client1);
