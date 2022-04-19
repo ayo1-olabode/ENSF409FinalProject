@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 
 public class calculateFood {
-	InventoryDB inventory = new InventoryDB("jdbc:mysql://localhost/food_inventory", "ensf", "student");
+	InventoryDB inventory = new InventoryDB("jdbc:mysql://localhost/food_inventory", "student", "ensf");
 	private Client client;
 	private ArrayList<Food> food;
 	private ArrayList<Food> finalFood;
