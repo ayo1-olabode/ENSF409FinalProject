@@ -27,8 +27,8 @@ After compiling, run command ```java edu.ucalgary.ensf409.Controller```
 #### DATABASE INFORMATION
 
 ```
-database username: ensf
-database password: student
+database username: student
+database password: ensf
 ```
 
 ##### Code Style
