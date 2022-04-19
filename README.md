@@ -26,6 +26,10 @@ run command ```java edu.ucalgary.ensf409.Controller```
 -MySQL-connector-java-8.0.23
 ````
 
+#### TEST INFORMATION 
+- To run tests the package is one level higher instead of edu.ucalgary.ensf409 --> edu.ucalgary.ensf409.tests
+- we have left the testing/database libraries in the lib so run the commands at that location 
+
 #### DATABASE INFORMATION
 
 ```
