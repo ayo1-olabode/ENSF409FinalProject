@@ -44,7 +44,7 @@ public class MainPage extends JFrame {
 	//initialize instance of database
 	public MainPage(int number, String name) {
 		this.username = name;
-		InventoryDB myJDBC = new InventoryDB("jdbc:mysql://localhost/food_inventory", "ensf", "student");
+		InventoryDB myJDBC = new InventoryDB("jdbc:mysql://localhost/food_inventory", "student", "ensf");
         myJDBC.initializeConnection();
 
 		//client nutritional value saved from database
